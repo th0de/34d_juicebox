@@ -13,6 +13,7 @@
     "prisma": "^5.13.0"
   },
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "express": "^4.19.2",
     "react": "^18.2.0"
   }
