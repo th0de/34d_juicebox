@@ -55,6 +55,8 @@ async function syncAndSeed() {
   }
 }
 
-
+if (require.main === module) {
+  seed();
+}
 
 module.exports = seed;
