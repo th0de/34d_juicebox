@@ -1,0 +1,42 @@
+{
+  "name": "34d_juicebox",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "seed": "node server/db/seed.js",
+    "client:dev": "vite serve client",
+    "server:dev": "JWT=JWT node --watch server",
+    "server:dev:windows": "set JWT=JWT && node --watch server",
+    "server": "node server"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "faker": "^6.6.6",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "node": "^18.20.2",
+    "pg": "^8.11.5",
+    "prisma": "^5.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.23.0",
+    "seed": "./server/db/seed.js"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "vite": "^5.2.0"
+  }
+}
